@@ -1,29 +1,29 @@
 @import "lib/bootstrap/variables.less";
 @import "../icomoon/variables.less";
 
-@theme-bg: #f0f0f0;
-@theme-font-color: #333;
-@theme-red: #e74c3c;
+@theme-bg: #131313;
+@theme-font-color: #fff;
+@theme-red: #e31d19;
 @theme-blue: #428bca;
 @theme-yellow: #f1c40f;
 @theme-green: #5cb85c;
 
 //Icon styles
-@icon-color: #707070;
+@icon-color: @theme-red;
 
 // card variables
-@card-bg: white;
-@card-border-color: #e6e6e6;
+@card-bg: #222;
+@card-border-color: #222;
 @card-border-radius: 3px;
 
 // Social variables;
-@github-color: #454545;
+@github-color: #fff;
 @twitter-color: #33ccff;
 @soundcloud-color: rgb(232, 130, 45);
 @rss-feed-color: #f36f24;
 @linkedin-color: #007bb6;
 @youtube-color: #dd4b39;
-@skype-color: #12A5F4;
+@skype-color: #12a5f4;
 @googleplus-color: #dd4b39;
 @tumblr-color: #2d4661;
 @instagram-color: #e4405f;
@@ -44,11 +44,11 @@
 @bitbucket-color: rgb(32, 80, 129);
 @hackernews-color: rgb(255, 102, 0);
 @exercism-color: #d81d4e;
-@blogger-color: #FF9234;
-@medium-color: #00AB6C;
+@blogger-color: #ff9234;
+@medium-color: #00ab6c;
 @flickr-color: black;
-@telegram-color: #3BABDD;
-@gitlab-color: #E14328;
+@telegram-color: #3babdd;
+@gitlab-color: #e14328;
 
 // Skill related colors
 @skill-beginner-color: @theme-red;
@@ -57,5 +57,5 @@
 @skill-master-color: @theme-green;
 
 // Label styles
-@theme-label-border-color: darken(@theme-label-bg, 20%);
-@theme-label-bg: lighten(@theme-blue, 15%);
+@theme-label-border-color: @card-border-color;
+@theme-label-bg: @theme-bg;

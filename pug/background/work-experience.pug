@@ -18,12 +18,12 @@ unless _.isEmpty(resume.work)
                     title="Currently Working",
                     data-placement="left"
                   )
-                strong= experience.position
-                |,&nbsp;
+                strong.job-title= experience.position
+                br
                 if experience.website
                   a(href=experience.website, target="_blank")= experience.company
                 else
-                  |#{experience.company}
+                  |#{experience.name}
 
               p.text-muted
                 small
