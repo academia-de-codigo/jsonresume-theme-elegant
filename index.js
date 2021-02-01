@@ -14,7 +14,6 @@ require("./moment-precise-range.js");
 utils.setConfig({ date_format: "MMM, YYYY" });
 
 function render(resume) {
-  console.log("rendering..");
   const addressAttrs = [
     "address",
     "city",
