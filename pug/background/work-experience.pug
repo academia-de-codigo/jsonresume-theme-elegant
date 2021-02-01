@@ -20,8 +20,8 @@ unless _.isEmpty(resume.work)
                   )
                 strong.job-title= experience.position
                 br
-                if experience.website
-                  a(href=experience.website, target="_blank")= experience.company
+                if experience.url
+                  a(href=experience.url, target="_blank")= experience.company
                 else
                   |#{experience.name}
 
