@@ -269,12 +269,12 @@
 }
 .label-keyword {
   display: inline-block;
-  background: #131313;
+  background: #e31d19;
   color: white;
   font-size: 0.9em;
   padding: 5px;
-  border: 1px solid #222;
   margin-right: 5px;
+  font-weight: 400;
 }
 .label-keyword:last-child {
   margin-right: 0;
@@ -337,16 +337,51 @@
   src: url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm45xW4.ttf) format('truetype');
 }
 @font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_bZF7g4.ttf) format('truetype');
+}
+@font-face {
   font-family: 'Space Mono';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/spacemono/v6/i7dPIFZifjKcF5UAWdDRUEY.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spacemono/v6/i7dMIFZifjKcF5UAWdDRaPpZYFI.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spacemono/v6/i7dPIFZifjKcF5UAWdDRUEY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spacemono/v6/i7dMIFZifjKcF5UAWdDRaPpZYFI.ttf) format('truetype');
+}
 body {
-  font-family: "Montserrat", sans-serif;
-  background: #131313;
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  background-color: #333;
   color: #fff;
+}
+a {
+  color: #e31d19;
+}
+a:focus {
+  color: #5ab3ff;
 }
 .main {
   padding: 5px;
@@ -359,17 +394,19 @@ body {
 }
 .card {
   background: #222;
-  border: 1px solid #222;
+  border: 1px solid #ccc;
   border-radius: 3px;
   min-height: 300px;
   padding: 10px 0;
 }
 .card .title {
-  font-family: "Space Mono", monospace;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 2em;
 }
 .card-nested {
   min-height: 0;
-  border-width: 1px 0 0 0;
+  border-width: 0;
 }
 .card-nested:before,
 .card-nested:after {
@@ -450,7 +487,7 @@ body {
   box-sizing: border-box;
   float: left;
   padding: 0 10px;
-  border-right: 1px solid #080808;
+  border-right: 1px solid #b3b3b3;
 }
 @media (max-width: 992px) {
   .info .content.has-sidebar {
@@ -478,7 +515,7 @@ body {
   color: #e31d19;
   position: absolute;
   right: 100%;
-  top: 4px;
+  top: 8px;
   left: -10px;
 }
 .mop-wrapper > p:last-child {
@@ -500,7 +537,7 @@ body {
   text-align: center;
   background-color: white;
   font-size: 1.5em;
-  color: #000000;
+  color: #87110f;
   z-index: 100;
   position: fixed;
   bottom: 10px;
@@ -516,7 +553,7 @@ body {
   display: none;
 }
 .floating-nav-trigger:hover {
-  color: #000000;
+  color: #2b0605;
   background-color: #e6e6e6;
 }
 .floating-nav-trigger.is-open {
@@ -566,11 +603,11 @@ body {
 .floating-nav ul li a {
   padding: 20px;
   text-decoration: none;
-  color: #000000;
+  color: #87110f;
   display: block;
 }
 .floating-nav ul li a:hover {
-  color: #000000;
+  color: #2b0605;
 }
 .floating-nav ul li:last-child {
   border-bottom: 0;

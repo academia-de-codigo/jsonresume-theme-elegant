@@ -1,12 +1,22 @@
 @import "variables";
 @import "mixins";
 @import "icon";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 
 body {
-  font-family: "Montserrat", sans-serif;
-  background: @theme-bg;
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  background-color: @theme-bg;
   color: @theme-font-color;
+}
+
+a {
+  color: #e31d19;
+}
+
+a:focus {
+  color: #5ab3ff;
 }
 
 .main {
@@ -29,14 +39,16 @@ body {
   padding: 10px 0;
 
   .title {
-    font-family: "Space Mono", monospace;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 2em;
   }
 }
 
 .card-nested {
   .clearfix();
   min-height: 0;
-  border-width: 1px 0 0 0;
+  border-width: 0;
 
   @media (max-width: @screen-phone) {
     padding: 5px 0;
@@ -148,7 +160,7 @@ ul {
   color: @theme-red;
   position: absolute;
   right: 100%;
-  top: 4px;
+  top: 8px;
   left: -10px;
 }
 

@@ -24,7 +24,7 @@ function render(resume) {
   const addressValues = addressAttrs.map((key) => resume.basics.location[key]);
   const css = fs.readFileSync(__dirname + "/assets/css/theme.css", "utf-8");
 
-  resume.basics.picture = utils.getUrlForPicture(resume);
+  resume.basics.picture = resume.basics.image || utils.getUrlForPicture(resume);
   resume.basics.summary = convertMarkdown(resume.basics.summary);
   resume.basics.computed_location = _.compact(addressValues).join(", ");
 
